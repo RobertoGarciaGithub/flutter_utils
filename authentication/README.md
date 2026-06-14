@@ -3,9 +3,12 @@
 
 ## Getting Started
 
-Add dependencies:
-  `flutter pub add local_auth`
-  `flutter pub add flutter_riverpod`
+Add dependencies: `local_auth` `flutter_riverpod`
+
+  ```bash
+    flutter pub add local_auth
+    flutter pub add flutter_riverpod
+  ```
 
 add permissions to AndroidManifest.xml:
   ```xml
@@ -17,7 +20,12 @@ add permissions to Info.plist:
     <key>NSFaceIDUsageDescription</key>
     <string>We need to use Face ID to protect your data.</string>
   ```
+add main activity to extend FlutterFragmentActivity:
+  ```kt
+    import io.flutter.embedding.android.FlutterFragmentActivity
 
+    class MainActivity : FlutterFragmentActivity()
+  ```
 add minSdkVersion to android/local.properties
   `flutter.minSdkVersion=21`
 
