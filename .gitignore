@@ -13,3 +13,4 @@ api/tmp/storage/*
 !api/tmp/storage/
 !api/tmp/storage/.keep
 api/config/*.key
+.env*
